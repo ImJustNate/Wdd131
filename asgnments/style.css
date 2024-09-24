@@ -1,0 +1,49 @@
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    line-height: 1.5;
+}
+
+h2{
+    color: #006EB6;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.box{
+    width: 800px;
+    border: grey, solid, 2px;
+}
+
+img{
+    width: 150px;
+}
+
+footer{
+    text-align: center;
+}
+
+main{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+header{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border: grey, solid, 2px;
+    border-top: #006EB6;
+    border-right: #006EB6;
+    border-left: #006EB6;
+    margin-bottom: 10px;
+}
