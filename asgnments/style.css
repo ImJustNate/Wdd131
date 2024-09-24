@@ -21,6 +21,7 @@ h1{
 .box{
     width: 800px;
     border: grey, solid, 2px;
+    margin: 0 auto;
 }
 
 img{
