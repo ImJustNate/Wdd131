@@ -3,7 +3,6 @@ body{
     font-family: 'Times New Roman';
     line-height: 1.5;
 }
-
 h2{
     color: #006EB6;
     text-align: center;
@@ -47,4 +46,18 @@ header{
     border-right: #006EB6;
     border-left: #006EB6;
     margin-bottom: 10px;
+}
+
+.dark {
+    color: white;
+    background-color: #333;
+}
+/* 
+.dark img{
+    display: none;
+    width: 100000px;
+} */
+
+.dark #blue{
+    color: #A0D4ED;
 }
