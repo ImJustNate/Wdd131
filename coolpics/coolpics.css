@@ -20,9 +20,13 @@ body, a{
     color: white;
     background-color: maroon;
     text-align: center;
-    
     font-family: var(--primary-font);
     font-size: 1.2em;
+}
+
+body{
+    width: 100%;
+    margin: 0;
 }
 
 a:link,
