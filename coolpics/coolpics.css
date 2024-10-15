@@ -50,31 +50,54 @@ header{
     grid-template-columns: 1fr;
 }
 
+button{
+    background-color: #6D1A36;
+    border: 2px white solid;
+    font-size: 2em;
+    color: white;
+    margin: auto;
+}
+
+.menu-button{
+    display: block;
+    width: 20%;
+}
+a{
+    margin: 6%;
+}
+
+.hide {
+	display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+     .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .gallery{
         grid-template-columns: 1fr 1fr;
     }
-    a{
+    /* a{
         display: none;
-    }
+    } */
 }
 
 @media screen and (min-width: 1000px) {
     .gallery{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    header{
+     .menu{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    h1{
-        grid-row: 1;
-        grid-column: -1/1;
-    }
-    h2{
-        display: none;
-    }
-    a{
+    /* a{
         display: block;
         font-size: 1.2em;
-    }
+    }  */
 }
+
