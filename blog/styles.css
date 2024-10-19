@@ -99,6 +99,10 @@ font-size: larger;
     font-size: xx-large;
 }
 
+.hide{
+    display: none;
+}
+
 .skiptocontent a {
     position: absolute;
     left:-200px;
