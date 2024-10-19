@@ -30,8 +30,7 @@ body{
     margin: 0;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
   color: var(--accent-color);
 }
 
@@ -70,6 +69,24 @@ a{
 	display: none;
 }
 
+.viewer{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-row: 1fr;
+    position: fixed;
+    top:0;left:0;bottom:0;right:0;
+    background-color: #333;
+    margin-top: 10%;
+}
+
+.close-viewer{
+    grid-column: 3/4;
+}
+
+.viewer-img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 
 @media screen and (max-width: 700px) {
      .menu{
@@ -77,6 +94,15 @@ a{
         grid-template-columns: 1fr;
         margin: 0;
     }
+
+    a{
+        margin: 0;
+        margin-top: 3%;
+    }
+    .hide{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 700px) {
