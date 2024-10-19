@@ -79,3 +79,30 @@ font-size: larger;
 .bookcard div{
     padding-right: 10%;
 }
+
+.bookcard a{
+    color: #5D4A46f5;
+    font-size: xx-large;
+}
+
+.skiptocontent a {
+    position: absolute;
+    left:-200px;
+    width: 134px;
+    height: 20px;
+    background-color: blue;
+    margin: 0%;
+    color: #FCFBED;
+    padding: 5px;
+
+}
+.skiptocontent a:focus {
+	left: 10px;
+    background-color: blue;
+    color: #FCFBED;
+}
+
+a:focus{
+    background-color: #5D4A46f5;
+    color: #FCFBED;
+}
