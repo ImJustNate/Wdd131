@@ -30,6 +30,23 @@ header a{
     grid-column: 5;
 }
 
+header button{
+    border: #5D4A46f5 solid 1px;
+    color: #5D4A46f5;
+    width: 80%;
+    font-size: larger;
+}
+
+header button:hover{
+    background-color: white;
+}
+
+header button:active{
+    background-color:#5D4A46f5;
+    color: #FCFBED;
+    border: white 1px solid;
+}
+
 #searchbar{
     grid-column: 4/6;
     grid-row: 2;
@@ -46,9 +63,6 @@ input{
     align-self: center;
     justify-self: center;
     margin-left: 15%;
-}
-button{
-    width: 80%;
 }
 
 .bookcard{
