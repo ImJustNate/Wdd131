@@ -4,21 +4,25 @@
  5D4A46f5*/
 
 header{
+    grid-column: 1/-1;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     background-color: #FCFBED;
-    margin: auto;
-    width: 90%;
+    width: 100%;
     border: #5D4A46f5 2px solid;
     padding-bottom: 10px;
     color: #5D4A46f5;
-    margin-top: 10px;
 }
 
 body{
     background-color: #F46036;
     color: #5D4A46f5;
+    display: grid;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
 }
 
 header h1{
@@ -55,21 +59,20 @@ header button:active{
 }
 
 input{
-    width: 70%;
+    width: 90%;
     height: 1.5em;
 }
 
 #searchbar p{
-    align-self: center;
-    justify-self: center;
-    margin-left: 15%;
+    width: 100%;
+    justify-self: center; 
+    /* margin-left: 15%; */
 }
 
 .bookcard{
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: 60% 40%;
-    margin: auto;
     border: 2px #5D4A46f5 solid;
     margin-top: 20px;
     background-color: #FCFBED;
@@ -87,7 +90,7 @@ input{
     font-size: large;
 }
 .bookcard i {
-font-size: larger;
+    font-size: larger;
 }
 
 .bookcard div{
@@ -97,6 +100,10 @@ font-size: larger;
 .bookcard a{
     color: #5D4A46f5;
     font-size: xx-large;
+}
+
+.filler{
+    display: none;
 }
 
 .hide{
@@ -123,4 +130,16 @@ font-size: larger;
 a:focus{
     background-color: #5D4A46f5;
     color: #FCFBED;
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        grid-template-columns: 1fr 20px 1fr;
+    }
+     .filler{
+        grid-column: 2/3;
+        grid-row: 3/500;
+        /* background-color: aquamarine; */
+        display: block;
+    }
 }
