@@ -1,0 +1,127 @@
+body{
+    background-color: white;
+}
+#card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 825px;
+    height: 450px;
+}
+.card1{
+    grid-column: 1/10;
+    grid-row: 1/10;
+    height: 360px;
+    width: 600px;
+    background-color: lightgrey;
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 2px 2px gray;
+
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 1fr 50px 50px 50px 50px 50px 1fr;
+}
+.card2{
+    /* display: none; */
+    grid-column: 3/12;
+    grid-row: 2/11;
+    height: 360px;
+    width: 600px;
+    background-color: darkgrey;
+    box-shadow: 2px 2px gray;
+    border-radius: 10px;
+    display: grid;
+
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 1fr 50px 50px 50px 50px 50px 1fr;
+}
+button{
+    grid-row: 11;
+}
+#total{
+    grid-column: 2;
+    grid-row: 2;
+}
+.card-image{
+    grid-column: 4;
+    grid-row: 2;
+    justify-self: right;
+}
+
+#cardNumber{
+    grid-row: 3;
+    grid-column: 2/3;
+    font-size: medium;
+    padding-top: 20px;
+    text-align: right;
+}
+
+#crd_num{
+    grid-row: 4;
+    grid-column: 2/5;
+    height: 60%;
+    width: 85%;
+    justify-self: center;
+}
+
+#cardHolder{
+    grid-row: 5;
+    grid-column: 2/3;
+    font-size: medium;
+    padding-top: 20px;
+    text-align: right;    
+}
+#crd_holder{
+    grid-row: 6;
+    grid-column: 2/4;
+    height: 60%;
+    width: 75%;
+    justify-self: center;
+}
+
+#expiration{
+    grid-row: 5;
+    grid-column: 4;
+    font-size: medium;
+    padding-top: 20px;
+    text-align: left;    
+    margin-left: 10px;
+}
+#crd_month{
+    grid-row: 6;
+    grid-column: 4;
+    height: 60%;
+    width: 30%;
+    justify-self: left;
+    /* margin-left: 10%; */
+}
+#crd_year{
+    grid-row: 6;
+    grid-column: 4;
+    height: 60%;
+    width: 30%;
+    margin-right: 25%;
+    justify-self: right;
+}
+#mag_strip{
+    background-color: black;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.cvc{
+    grid-row: 5;
+    grid-column: 4;
+    text-align: right;
+    font-size: medium;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+#crd_cvc{
+    grid-row: 6;
+    grid-column: 4;
+    justify-self: right;
+    width: 50%;
+    height: 60%;
+}
