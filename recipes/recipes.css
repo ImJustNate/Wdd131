@@ -159,13 +159,13 @@ header{
     }
     
     #search{
-        border: 2px black solid;
+        border: 2px #333 solid;
         width: 95%;
         border-radius: 10px;
     }
     #search input{
         border: 0cap;
-        border-right: 2px black solid;
+        border-right: 2px #333 solid;
         font-size: larger;
         width: 89%;
         height: 50px;
