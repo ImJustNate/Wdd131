@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+body{
+    background-color: #ebebeb;
+}
+.social img{
+    height: 50px;
+}
+.social{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 200px;
+}
+h1{
+    font-size: 7em;
+    font-family:cursive;
+    font-weight:lighter;
+}
+.logo_Words{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 350px;
+}
+header{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 3px grey solid;
+}
+
+#search{
+    border: 2px #333 solid;
+    width: 95%;
+    border-radius: 10px;
+}
+#search input{
+    border: 0cap;
+    border-right: 2px #333 solid;
+    font-size: larger;
+    width: 95%;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ebebeb;
+}
+#search i{
+    font-size: x-large;
+    margin: auto;
+}
+
+.recipeCard{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border: #333 2px solid;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.recipeCard img{
+    width: 94%;
+    /* margin: 10px; */
+}
+
+.recipeCard button{
+    border: #333 2px solid;
+    background-color:#ebebeb;
+    height: 40px;
+    font-size: x-large;
+}
+.recipeCard h2{
+    color: #1B98E0;
+    font-size: xx-large;
+    font-family: cursive;
+}
+.recipeCard p{
+    color: #333;
+    font-size: large;
+    font-family: cursive;
+}
+.icon-star{
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 900px) {
+    .recipeCard{
+        grid-template-columns: 1fr;
+        padding: 3%;
+    }
+    .recipeCard img{
+        margin: auto;
+        margin-bottom: 3%;
+        /* margin: 3%; */
+        /* width: 94%; */
+    }
+    .recipeCard p{
+        display: none;
+    }
+
+    .social img{
+        height: 100px;
+    }
+    .social{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .social section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .social section img{
+        margin: 10px;    
+    }
+
+    #logo{
+        height: 100%;
+    }
+    h1{
+        font-size: 350%;
+        /* margin-bottom: -130px; */
+    }
+    .logo_Words{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        height: 200px;
+    }
+    header{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        border-bottom: 3px grey solid;
+    }
+    
+    #search{
+        border: 2px black solid;
+        width: 95%;
+        border-radius: 10px;
+    }
+    #search input{
+        border: 0cap;
+        border-right: 2px black solid;
+        font-size: larger;
+        width: 89%;
+        height: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #search i{
+        font-size: x-large;
+        margin: auto;
+    }
+
+}
