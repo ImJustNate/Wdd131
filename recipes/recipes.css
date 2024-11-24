@@ -101,6 +101,8 @@ header{
     font-size: xx-large;
 }
 
+/* 1200 is the other cap that needs a media query */
+
 @media screen and (max-width: 900px) {
     .recipeCard{
         grid-template-columns: 1fr;
