@@ -10,22 +10,15 @@ function RandomRecipe(list){
 	return list[randomNum];
 }
 
-function ReturnTags(tags){
-    const newSection = document.createElement("section");
-    tags.forEach(tag => {
-        const button = document.createElement("button");
-        button.textContent = tag; // Safer than `innerHTML` for simple text
-        newSection.appendChild(button);    
-    });
-
-    return newSection
+function ReturnTags(tags) {
+    return tags.map(tag => `<button>${tag}</button>`).join('');
 }
 
 
 
 function ReturnStars(num){
     const newSection = document.createElement("section");
-    if (num = 5){
+    if (num == 5){
         newSection.innerHTML = `
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star">⭐</span>
@@ -33,7 +26,7 @@ function ReturnStars(num){
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star">⭐</span>`
     }
-    else if (num = 4){
+    else if (num == 4){
         newSection.innerHTML = `
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star">⭐</span>
@@ -41,7 +34,7 @@ function ReturnStars(num){
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star-empty">☆</span>`
     }
-    else if (num = 3){
+    else if (num == 3){
         newSection.innerHTML = `
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star">⭐</span>
@@ -49,7 +42,7 @@ function ReturnStars(num){
         <span aria-hidden="true" class="icon-star-empty">☆</span>
         <span aria-hidden="true" class="icon-star-empty">☆</span>`
     }
-    else if (num = 2){
+    else if (num == 2){
         newSection.innerHTML = `
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star">⭐</span>
@@ -57,7 +50,7 @@ function ReturnStars(num){
         <span aria-hidden="true" class="icon-star-empty">☆</span>
         <span aria-hidden="true" class="icon-star-empty">☆</span>`
     }
-    if (num = 1){
+    if (num == 1){
         newSection.innerHTML = `
         <span aria-hidden="true" class="icon-star">⭐</span>
         <span aria-hidden="true" class="icon-star-empty">☆</span>
@@ -72,7 +65,7 @@ function htmlTemplate(item){
         return `<section class="recipeCard">
             <img src="${item.image}" alt="Image of ${item.name} on a plate">
             <div>
-            ${ReturnTags(['dessert', 'German'])}
+            ${ReturnTags(item.tags)}
             <h2>${item.name}</h2>
             <section>
                 <span
@@ -91,9 +84,27 @@ function htmlTemplate(item){
     
 }
 console.log(ReturnTags(['dessert', 'German']))
-console.log(recipes[7].tags)
-console.log(htmlTemplate(7))
+console.log(recipes[0].tags)
+console.log(htmlTemplate(RandomRecipe(recipes)))
 
+function renderRecipes(recipeList) {
+	// get the element we will output the recipes into
+
+        const outputElement = document.getElementsByName('main');
+	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
+        const recipesHTML = recipeList.map(htmlTemplate).join('');
+	// Set the HTML strings as the innerHTML of our output element.
+        outputElement.innerHTML = recipesHTML;
+
+}
+
+function init() {
+  // get a random recipe
+  const recipe = RandomRecipe(recipes)
+  // render the recipe with renderRecipes.
+  renderRecipes([recipe]);
+}
+init();
 
 // document.body.appendChild(htmlTemplate(RandomRecipe(recipes)));
 
