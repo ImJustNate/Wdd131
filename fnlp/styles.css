@@ -1,0 +1,346 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #C94E36;
+    --accent1-color: #777;
+    --accent2-color: #339933;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Gilda Display";
+    --paragraph-font: Work Sans, Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+
+body{
+    background-color: white;   
+    padding: 20px;
+    margin: 0%;
+    font-family: "Gilda Display";
+}
+img{
+    width: 100%;
+}
+header{
+    /* position: sticky;
+    top: 0; */
+
+    /* width: 80%;
+    margin: auto;
+    margin-top: 0; */
+    background-color: #C94E36;
+    display: flex;
+    flex-wrap: wrap;    
+    /* border: #777 solid 2px; */
+
+}
+header a{
+    background-color: #C94E36;
+    color: white;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+}
+header a:hover{
+    background-color: #333;
+}
+header img{
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 20%;
+    background-color: white;
+}
+main{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding-top: 0;
+    font-size: larger;
+}
+#hero_img{
+    width: 100%;
+    /* width: 99%;
+    /* margin-left: .5%; */
+    margin-top: .5%; 
+}
+a{
+    color: #339933;
+    text-decoration: none;
+}
+p{
+    font-family: work sans;
+    font-size: 15px;
+}
+.P_larger{
+    font-family: work sans;
+    font-size: 18px;
+}
+h2{
+    font-size: 20px;
+}
+footer{
+    margin-top: 10%;
+}
+footer h3{
+    text-decoration: underline ;
+    text-align: center;
+    font-size: 15px;
+}
+b{
+    font-weight: bolder;
+    color: #339933;
+}
+.notice{
+    text-align: center;
+    font-size: 30px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* #join{
+    width: 45%;
+} */
+#join h1{
+    text-align: center;
+    font-size: 45px;
+}
+#join p{
+    font-size: 25px;
+}
+#libraryAddress{
+    line-height: 0;
+    align-self: center;
+    text-align: center;
+}
+#libraryAddress p{
+    width: 100%;
+}
+#joinSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.item{
+    width: 40%;
+    border: #333 2px solid;
+    line-height: 30px;
+    justify-self: auto;
+    margin: 5px;
+}
+.item input{
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+.item label{
+    padding: 3px;
+    font-size: 25px;
+}
+#name{
+    width: 100%;
+}
+#name input{
+    width: 70%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#address{
+    width: 50%;
+}
+#address input{
+    width: 50%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#apt{
+    width:42%;
+    margin-left: auto;
+}
+#apt input{
+    width: 30%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#city{
+    width: 45%;
+}
+#city input{
+    width: 60%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#state{
+    width:45%;
+    margin-left: auto;
+}
+#state input{
+    width: 56%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#zip{
+    width:65%;
+}
+#zip input{
+    width: 50%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#email{
+    width:100%;
+}
+#email input{
+    width: 75%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+#phone{
+    width:100%;
+}
+#phone input{
+    width: 75%;
+    border: 0;
+    border-bottom: #333 1px solid;
+}
+.item2{
+    width:100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 15px;
+}
+.item2 input{
+    width: 40px;
+    margin-left: auto;
+}
+
+
+#joinSubmit{
+    margin-left: auto;
+    border: #C94E36 2px solid;
+    color: #C94E36;
+    background-color: white;
+    font-family: Gilda Display;
+    font-weight: 900;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.donateButton{
+    border: #C94E36 2px solid;
+    color: #C94E36;
+    font-weight: 900;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+@media (min-width: 970px) {
+    main{
+      width: 50%;
+    }
+  }
+
+@media (min-width: 1400px) {
+    body{
+    width: 1400px;
+    margin: auto;
+    }
+}
+@media (max-width:970px) and (min-width:430px){
+    main{
+        width: 500px;
+    }
+}
+
+@media (max-width: 430px){
+    main{
+        width: 100%;
+    }
+    .item{
+        font-size: xx-small;
+    }
+    .item input{
+        font-size: 20px;
+    }
+    #name input{
+        width: 65%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #address{
+        width: 100%;
+    }
+    #address input{
+        width: 57%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #apt{
+        width: 100%;
+        margin-left: 5px;
+    }
+    #apt input{
+        width: 50%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #city {
+        width: 100%;
+    }
+    #city input{
+        width: 70%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #state{
+        width: 100%;
+        margin-left: 5px;
+    }
+    #state input{
+        width: 70%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #zip {
+        width: 100%;
+    }
+    #zip input{
+        width: 50%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #email input{
+        width: 63%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #phone input{
+        width: 60%;
+        border: 0;
+        border-bottom: #333 1px solid;
+    }
+    #libraryAddress p{
+        font-size: 15px;
+    }
+}

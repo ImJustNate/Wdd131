@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="FNPL2020-Header-Color.jpg" alt="The friends of the Neill public library Logo">
+        <a href="index.html">Welcome</a>
+        <a href="https://friendsofnpl.com/about/">About Us</a>
+        <a href="https://friendsofnpl.com/book-sale/">Book Sale</a>
+        <a href="https://friendsofnpl.com/community/">Community</a>
+        <a href="donate.html">Donate</a>
+    </header>
+    <h3 class="notice">To submit a donation please submit the form and then click the donate button.</h3>
+    <main>
+        <div id="join">
+            <h1>Join</h1>
+            <p>If you prefer to send a check or cash, you can <a href="https://friendsofnpl.com/wp-content/uploads/2021/03/FNPL2021MembershipCardSingle.pdf">print and fill out our membership</a> form then mail it with your check to:</p>
+            <div id="libraryAddress">
+                <p>Friends of Neill Public Library</p>
+                <p>210 N Grand Avenue</p>
+                <p>Pullman, WA 99163</p>
+            </div>
+            <form id="joinSection">
+                
+                <!-- <div class="item">
+                    <label for="adult_name">Name<span>*</span></label>
+                    <input id="adult_name" type="text" name="adult_name" />
+                </div> -->
+                <div class="item" id="name">
+                    <label for="name"> Name<span>*</span></label>
+                    <input id="nameBox" type="text" name="name" required />
+                </div>
+
+                <div class="item" id="address">
+                    <label for="address"> Address<span>*</span></label>
+                    <input id="addressBox" type="text" name="address" required />
+                </div>
+                <div class="item" id="apt">
+                    <label for="apt"> Apt Num<span></span></label>
+                    <input id="aptBox" type="text" name="apt" value="" />
+                </div>
+                
+                <div class="item" id="city">
+                    <label for="city"> City<span>*</span></label>
+                    <input id="cityBox" type="text" name="city" value="" required />
+                </div>
+                <div class="item" id="state">
+                    <label for="state"> State<span>*</span></label>
+                    <input id="stateBox" type="text" name="state" value="" required />
+                </div>
+
+                <div class="item" id="zip">
+                    <label for="zip"> Zip Code<span>*</span></label>
+                    <input id="zipBox" type="text" name="zip" value="" required />
+                </div>
+                
+                <div class="item" id="email" >
+                    <label for="email"> Email<span>*</span></label>
+                    <input id="emailBox" type="email" name="email" value="" required />
+                </div>
+                <div class="item" id="phone">
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phoneBox" type="text" name="phone" value="" required />
+                </div>
+                
+                <div class="item2" id="namePermission" >
+                    <label for="namePermission">Do we have your permission to list your name as a Friends supporter on our website or in publications? <b>(If yes check the box)</b></label>
+                    <input id="namePermissionBox" type="checkbox" name="namePermission"/>
+                </div>
+                <div class="item2" id="volunteer" >
+                    <label for="volunteer">Would you like to be contacted about volunteer opportunities? <b>(If yes check the box)</b></label>
+                    <input id="volunteerBox" type="checkbox" name="volunteer"  />
+                </div>
+                <a href="https://www.paypal.com/donate?token=owVNtoTZWtgjnJvAvjVF8SlVgMiSibhNHavvgSyb3XrQTTLxT8Pi27hSvg-C32MfNVsV6apVm1OpWBZz" class="donateButton">Donate</a>
+                <button id="joinSubmit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
