@@ -66,7 +66,7 @@ function getMailtoUrl(body) {
     args.push('subject=' + encodeURIComponent("Joining FNPL"));
     
     if (typeof body !== 'undefined') {
-        args.push('body=' + encodeURIComponent("rut ro"))
+        args.push('body=' + encodeURIComponent(body))
     }
 
     var url = 'mailto:' + encodeURIComponent("pullmanfnpl@gmail.com");
