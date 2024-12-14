@@ -2,7 +2,7 @@
     --primary-color: #333;
     --secondary-color: #C94E36;
     --accent1-color: #777;
-    --accent2-color: #339933;
+    --accent2-color: #1F5C1F;
   
     /* change the values below to your chosen font(s) */
     --heading-font: "Gilda Display";
@@ -56,6 +56,7 @@ header a{
     border: 0;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
 }
 header a:hover{
     background-color: #333;
@@ -80,8 +81,7 @@ main{
     margin-top: .5%; 
 }
 a{
-    color: #339933;
-    text-decoration: none;
+    color: #1F5C1F;
 }
 p{
     font-family: work sans;
@@ -104,7 +104,7 @@ footer h3{
 }
 b{
     font-weight: bolder;
-    color: #339933;
+    color: #1F5C1F;
 }
 .notice{
     text-align: center;
@@ -152,68 +152,68 @@ main{
     padding: 3px;
     font-size: 25px;
 }
-#name{
+#nameClass{
     width: 100%;
 }
-#name input{
+#nameClass input{
     width: 70%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#address{
+#addressClass{
     width: 50%;
 }
-#address input{
+#addressClass input{
     width: 50%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#apt{
+#aptClass{
     width:42%;
     margin-left: auto;
 }
-#apt input{
+#aptClass input{
     width: 30%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#city{
+#cityClass{
     width: 45%;
 }
-#city input{
+#cityClass input{
     width: 60%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#state{
+#stateClass{
     width:45%;
     margin-left: auto;
 }
-#state input{
+#stateClass input{
     width: 56%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#zip{
+#zipClass{
     width:65%;
 }
-#zip input{
+#zipClass input{
     width: 50%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#email{
+#emailClass{
     width:100%;
 }
-#email input{
+#emailClass input{
     width: 75%;
     border: 0;
     border-bottom: #333 1px solid;
 }
-#phone{
+#phoneClass{
     width:100%;
 }
-#phone input{
+#phoneClass input{
     width: 75%;
     border: 0;
     border-bottom: #333 1px solid;

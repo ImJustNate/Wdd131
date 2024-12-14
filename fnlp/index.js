@@ -2,40 +2,40 @@
 function submitForm(event) {
     event.preventDefault();
 
-    let name = document.getElementById("nameBox").value;
+    let name = document.getElementById("name").value;
     console.log(name)
 
-    let address = document.getElementById("addressBox").value;
+    let address = document.getElementById("address").value;
     console.log(address)
 
     let apt = "";
-    if (document.getElementById("aptBox").value){
-        apt = `\nApt. ` + document.getElementById("aptBox").value;
+    if (document.getElementById("apt").value){
+        apt = `\nApt. ` + document.getElementById("apt").value;
         console.log(apt)
     }
-    let city = document.getElementById("cityBox").value;
+    let city = document.getElementById("city").value;
     console.log(city)
 
-    let state = document.getElementById("stateBox").value;
+    let state = document.getElementById("state").value;
     console.log(state)
 
-    let zip = document.getElementById("zipBox").value;
+    let zip = document.getElementById("zip").value;
     console.log(zip)
 
-    let email = document.getElementById("emailBox").value;
+    let email = document.getElementById("email").value;
     console.log(email)
 
-    let phone = document.getElementById("phoneBox").value;
+    let phone = document.getElementById("phone").value;
     console.log(phone)
     
     let namePermission = "";
-    if (document.getElementById("namePermissionBox").checked){
+    if (document.getElementById("namePermission").checked){
         namePermission = "You have my permission to list your name as a Friends supporter on your website or in your publications.\n";
         console.log(namePermission)
     }
 
     let volunteer = ""
-    if (document.getElementById("volunteerBox").checked){
+    if (document.getElementById("volunteer").checked){
         volunteer = "I would like to be contacted about volunteer opportunities.\n";
         console.log(volunteer)
     }
